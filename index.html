@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クロミの世界 | Kuromi World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 🌟 Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="kuromi-loader">
+            <div class="skull-bow">💀🎀</div>
+            <p class="loading-text">ちょっとまって...</p>
+        </div>
+    </div>
+
+    <!-- 🎭 Navigation -->
+    <nav class="kuromi-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="kuromi-icon">🖤</span>
+                <span class="logo-text">クロミ</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-jp="ホーム">Home</a></li>
+                <li><a href="#about" data-jp="について">About</a></li>
+                <li><a href="#gallery" data-jp="ギャラリー">Gallery</a></li>
+                <li><a href="#music" data-jp="音楽">Music</a></li>
+                <li><a href="#contact" data-jp="連絡">Contact</a></li>
+            </ul>
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-btn">日本語</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🏠 Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-jp">クロミの世界へようこそ！</span>
+                <span class="title-en">Welcome to Kuromi's World!</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="subtitle-jp">可愛いとクールな悪魔のウサギ</span>
+                <span class="subtitle-en">The Cute and Cool Demon Rabbit</span>
+            </p>
+            <button class="cta-button" onclick="scrollToSection('about')">
+                <span class="btn-jp">もっと見る</span>
+                <span class="btn-en">Learn More</span>
+            </button>
+        </div>
+        <div class="hero-image">
+            <div class="kuromi-character">
+                <div class="kuromi-body">
+                    <div class="kuromi-head">
+                        <div class="jester-hat">
+                            <div class="hat-ball">⚫</div>
+                        </div>
+                        <div class="eyes">
+                            <div class="eye left">👁️</div>
+                            <div class="eye right">👁️</div>
+                        </div>
+                        <div class="mouth">😈</div>
+                    </div>
+                    <div class="kuromi-body-main">
+                        <div class="skull-bow">💀🎀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📖 About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-jp">クロミとは？</span>
+                <span class="title-en">Who is Kuromi?</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">🎭</div>
+                    <h3>
+                        <span class="jp">性格</span>
+                        <span class="en">Personality</span>
+                    </h3>
+                    <p>
+                        <span class="jp">クロミは悪そうに見えて、実はとっても女の子！恋愛小説が大好きで、日記を書くのが趣味なの。</span>
+                        <span class="en">Kuromi looks tough but is actually super girly! She loves romance novels and writing in her diary.</span>
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>
+                        <span class="jp">デザイン</span>
+                        <span class="en">Design</span>
+                    </h3>
+                    <p>
+                        <span class="jp">黒いチェック柄のジャester帽子とピンクの髑髏がトレードマーク！ハート型のしっぽも可愛いでしょ？</span>
+                        <span class="en">Black checkered jester hat with pink skull is her trademark! Her heart-shaped tail is cute too!</span>
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🍒</div>
+                    <h3>
+                        <span class="jp">好物</span>
+                        <span class="en">Favorites</span>
+                    </h3>
+                    <p>
+                        <span class="jp">お肉と桜エビが大好き！最近はさくらんぼにもハマってるみたい。</span>
+                        <span class="en">She loves meat and sakura shrimp! Recently she's been into cherries too.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🖼️ Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-jp">クロミギャラリー</span>
+                <span class="title-en">Kuromi Gallery</span>
+            </h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="cute">
+                    <div class="item-overlay">
+                        <span class="jp">かわいい</span>
+                        <span class="en">Cute</span>
+                    </div>
+                    <div class="placeholder-img">🖤🎀</div>
+                </div>
+                <div class="gallery-item" data-category="cool">
+                    <div class="item-overlay">
+                        <span class="jp">かっこいい</span>
+                        <span class="en">Cool</span>
+                    </div>
+                    <div class="placeholder-img">💀✨</div>
+                </div>
+                <div class="gallery-item" data-category="mischief">
+                    <div class="item-overlay">
+                        <span class="jp">いたずら</span>
+                        <span class="en">Mischief</span>
+                    </div>
+                    <div class="placeholder-img">😈🌟</div>
+                </div>
+                <div class="gallery-item" data-category="friends">
+                    <div class="item-overlay">
+                        <span class="jp">ともだち</span>
+                        <span class="en">Friends</span>
+                    </div>
+                    <div class="placeholder-img">👯‍♀️💜</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎵 Music Player -->
+    <section id="music" class="music-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-jp">クロミ音楽</span>
+                <span class="title-en">Kuromi Music</span>
+            </h2>
+            <div class="music-player">
+                <div class="player-card">
+                    <div class="album-art">
+                        <div class="album-placeholder">🎵💜</div>
+                    </div>
+                    <div class="player-controls">
+                        <button class="control-btn" id="playBtn">▶️</button>
+                        <button class="control-btn" id="pauseBtn" style="display:none;">⏸️</button>
+                        <button class="control-btn" id="nextBtn">⏭️</button>
+                    </div>
+                    <div class="song-info">
+                        <h3 class="song-title">
+                            <span class="jp">クロミのテーマ</span>
+                            <span class="en">Kuromi's Theme</span>
+                        </h3>
+                        <p class="song-artist">Sanrio</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💌 Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-jp">連絡してね</span>
+                <span class="title-en">Get in Touch</span>
+            </h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>
+                            <span class="jp">なまえ</span>
+                            <span class="en">Name</span>
+                        </label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span class="jp">めーる</span>
+                            <span class="en">Email</span>
+                        </label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span class="jp">めっせーじ</span>
+                            <span class="en">Message</span>
+                        </label>
+                        <textarea name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="jp">おくる</span>
+                        <span class="en">Send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌸 Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-item" style="top: 20%; left: 10%;">🖤</div>
+        <div class="floating-item" style="top: 60%; left: 80%;">🎀</div>
+        <div class="floating-item" style="top: 40%; left: 90%;">💀</div>
+        <div class="floating-item" style="top: 80%; left: 20%;">✨</div>
+        <div class="floating-item" style="top: 30%; left: 70%;">💜</div>
+    </div>
+
+    <!-- 🎵 Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
